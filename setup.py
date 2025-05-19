@@ -265,6 +265,9 @@ def collect_llm_api_keys():
                 api_key = input("Enter your OpenAI API key: ")
                 if validate_api_key(api_key):
                     api_keys['OPENAI_API_KEY'] = api_key
+                    api_base = input("Enter your OpenAI API base (leave blank for default): ").strip()
+                    if api_base:
+                        api_keys['OPENAI_API_BASE'] = api_base
                     
                     # Recommend default model
                     print(f"\n{Colors.CYAN}Recommended OpenAI models:{Colors.ENDC}")
@@ -455,7 +458,7 @@ ENV_MODE=local
     # LLM section
     env_content += "\n# LLM Providers:\n"
     # Add empty values for all LLM providers we support
-    all_llm_keys = ['ANTHROPIC_API_KEY', 'OPENAI_API_KEY', 'GROQ_API_KEY', 'OPENROUTER_API_KEY', 'MODEL_TO_USE']
+    all_llm_keys = ['ANTHROPIC_API_KEY', 'OPENAI_API_KEY', 'OPENAI_API_BASE', 'GROQ_API_KEY', 'OPENROUTER_API_KEY', 'MODEL_TO_USE']
     # Add AWS keys separately
     aws_keys = ['AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'AWS_REGION_NAME']
     

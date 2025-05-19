@@ -150,6 +150,7 @@ RABBITMQ_PORT=5672
 # LLM Providers
 ANTHROPIC_API_KEY=your-anthropic-key
 OPENAI_API_KEY=your-openai-key
+OPENAI_API_BASE=http://localhost:11434/v1
 MODEL_TO_USE=anthropic/claude-3-7-sonnet-latest
 
 # WEB SEARCH
