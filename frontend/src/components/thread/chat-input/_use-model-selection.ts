@@ -30,7 +30,8 @@ const MODEL_DESCRIPTIONS: Record<string, string> = {
   'deepseek': 'DeepSeek - Free tier model with good general capabilities',
   'deepseek-r1': 'DeepSeek R1 - Advanced model with enhanced reasoning and coding capabilities',
   'grok-3-mini': 'Grok-3 Mini - Smaller, faster version of Grok-3 for simpler tasks',
-  'qwen3': 'Qwen3 - Alibaba\'s powerful multilingual language model'
+  'qwen3': 'Qwen3 - Alibaba\'s powerful multilingual language model',
+  'ollama': 'Ollama - Local model served from your own OpenAI-compatible server'
 };
 
 export const canAccessModel = (

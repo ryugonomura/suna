@@ -50,6 +50,11 @@ def setup_api_keys() -> None:
         os.environ['OPENROUTER_API_BASE'] = config.OPENROUTER_API_BASE
         logger.debug(f"Set OPENROUTER_API_BASE to {config.OPENROUTER_API_BASE}")
 
+    # Set up OpenAI API base (e.g., for Ollama) if provided
+    if config.OPENAI_API_BASE:
+        os.environ['OPENAI_API_BASE'] = config.OPENAI_API_BASE
+        logger.debug(f"Set OPENAI_API_BASE to {config.OPENAI_API_BASE}")
+
     # Set up AWS Bedrock credentials
     aws_access_key = config.AWS_ACCESS_KEY_ID
     aws_secret_key = config.AWS_SECRET_ACCESS_KEY

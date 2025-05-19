@@ -45,6 +45,7 @@ MODEL_NAME_ALIASES = {
     # "deepseek-r1": "openrouter/deepseek/deepseek-r1",
     # "grok-3-mini": "xai/grok-3-mini-fast-beta",  # Commented out in constants.py
     "qwen3": "openrouter/qwen/qwen3-235b-a22b",  # Commented out in constants.py
+    "ollama": "ollama",  # Local Ollama server
 
 
 
